@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check nhiet do ngoai troi</title>
+</head>
+<body>
+<h3>Chuong Trinh Hiển thị ra 20 số trong dãy fibonacci đầu tiên.</h3>
+<script>
+    var so = 20
+    fiBonaci(so);
+    function fiBonaci(n) {
+        var fiBonaci1 = 0;
+        var fiBonaci2 = 1;
+        var fiBonaci3 = 0 ;
+        var tam = 0;
+        document.write(' 1 la: '+ fiBonaci1 + '; 2 la:  ' + fiBonaci2 + '  ;  ');
+        for (i=0; i<n; i++) {
+            fiBonaci3 = fiBonaci1 + fiBonaci2;
+            document.write(+ i +2 +' la: ' + fiBonaci3 + '  ;  ');
+            fiBonaci1 = tam;
+            fiBonaci1 = fiBonaci2;
+            fiBonaci2 = fiBonaci3;
+            fiBonaci3 = fiBonaci1 + fiBonaci2;
+
+        }
+
+
+
+    }
+
+
+</script>
+</body>
+</html>
