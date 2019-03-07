@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuong Trinh tim số Fibonaci dau tien chia het cho 5.</title>
+</head>
+<body>
+<h3>Chuong Trinh tim số Fibonaci dau tien chia het cho 5.</h3>
+<script>
+
+        var fiBonaci = [0,1];
+
+        var newFibonaci = 0;
+
+        for (var i=1; i< fiBonaci.length; i++) {
+            if(fiBonaci[i] % 5 === 0)
+            {
+
+            document.write('+ so Fibonaci dau tien chia het cho 5  la: '+ fiBonaci[i] + '  <br/> ');
+            break;
+            }
+            else{
+                newFibonaci = fiBonaci[i] + fiBonaci[i-1] ;
+                fiBonaci.push(newFibonaci);
+
+
+            }
+
+        }
+
+
+
+
+</script>
+</body>
+</html>

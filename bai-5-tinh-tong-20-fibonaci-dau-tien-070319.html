@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuong Trinh Hiển tinh tong 20 số dau tien trong dãy fibonacci đầu tiên.</title>
+</head>
+<body>
+<h3>Chuong Trinh Hiển tinh tong 20 số dau tien trong dãy fibonacci đầu tiên.</h3>
+<script>
+
+        var fiBonaci = [0,1];
+
+        var newFibonaci = 0;
+        var tongFibonaci = 0;
+        document.write('+ So Fibonaci thu 1 la :' + fiBonaci[0] + ' <br/>');
+        for (var i=1; i< 20; i++) {
+
+                newFibonaci = fiBonaci[i] + fiBonaci[i-1] ;
+                fiBonaci.push(newFibonaci);
+                document.write(' + So Fibonaci thu ' + eval(i+1) + ' la ' + fiBonaci[i] +' <br/>');
+                tongFibonaci = tongFibonaci + newFibonaci ;
+
+        }
+        alert(" Tong 20 so Fibonaci dau tien là : " + tongFibonaci);
+        document.write(' Tong 20 so Fibonaci dau tien là : ' + tongFibonaci);
+
+
+
+</script>
+</body>
+</html>

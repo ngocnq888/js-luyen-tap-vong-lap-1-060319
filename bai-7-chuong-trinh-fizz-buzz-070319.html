@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuong trinh Fizz Buzz</title>
+</head>
+<body>
+<h3>Hãy viết một chương trình in ra các số từ 1 đến 100.</h3>
+<h4>Nhưng nếu số chia hết cho 3 thì in ra "Fizz", 5 thì in ra "Buzz" thay vì in ra số đó.</h4>
+<h5>Và nếu số đó chia hết cho cả 3 và 5 thì in ra chữ "FizzBuzz".</h5>
+<script>
+
+    for (var i=1; i<=100; i++){
+        if ((i%5 === 0) && (i%3 === 0) ){
+            document.write('<br/>FizzBuzz <br/>');
+        }
+
+        else if(i%5 === 0){
+            document.write('<br/>Buzz <br/>');
+            }
+            else if(i%3 === 0){
+            document.write('<br/>Fizz <br/>');
+                    }
+                else {
+                document.write('<br/> '+ i + '<br/>');
+                    }
+    }
+
+
+
+</script>
+</body>
+</html>
